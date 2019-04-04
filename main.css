@@ -7,17 +7,18 @@ body{
 
 .hero img{
     display: block;
+    margin-top:20px;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    height: 200px;
+    height: 175px;
     border: 2px solid rgb(36, 36, 184);
     box-shadow: 3px 3px 5px 6px #ccc;
 }
 
 h2{
     margin: 20px;
-    font-size: 2em;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     color: white;
@@ -33,14 +34,15 @@ h3{
     display: flex;
     justify-content: center;
     margin: 10px;
-    font-size: 1.5rem;
+    font-size: 1rem;
   
 }
 
 .list{
     display: flex;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: .8rem;
+    margin: 10px 10px;
 }
 
 ul li{
@@ -48,6 +50,8 @@ ul li{
 }
 
 .truth{
+    height: fit-content;
+    
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 10px;
@@ -56,10 +60,10 @@ ul li{
     color: white;
     box-shadow: 3px 3px 5px 6px #ccc;
     animation-name: fadein;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
     opacity: 0;
 
 }
@@ -67,7 +71,9 @@ ul li{
 .quote{
     display: flex;
     justify-content: center;
-    font-size: 1.5rem;
+    height: fit-content;
+    
+    font-size: 1rem;
     
     
 }
@@ -75,9 +81,53 @@ ul li{
 .author{
     display: flex;
     justify-content: center;
-    margin-left: 16em;
+    margin-left: 8rem;
     font-size: 1rem;
     
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    color: white;
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.email{
+    display: flex
+}
+
+.email img{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border: 2px solid white;
+}
+
+.email p{
+    color: white;
+    margin: 25px;
+}
+
+.phone{
+    display: flex;
+}
+
+.phone img{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border: 2px solid white;
+}
+
+.phone p{
+    color: white;
+    margin: 25px;
 }
 
 @keyframes fadein{
@@ -110,28 +160,90 @@ ul li{
        }
 }
 
-@media (max-width: 500px){
-    .hero{
-        width: 490px;
-        margin: 5px 10px;
+@media (min-width: 300px){
+    h2{
+        font-size: 1.25rem;
     }
-    h2 h3 .list{
-        width: 290px;
-        font-size: .5rem;
-        margin: 10px;
+    
+    h3{
+        font-size: 1.25rem;
     }
-
-    .truth{
-        width: 290px;
-        font-size: .75rem;
-        margin: 10px;
+    
+    .list{
+        font-size: 1rem;
     }
 
-    .quote .author{
-        font-size: .75rem;
-        margin: 10px;
+    .quote{
+        font-size: 1.25rem;
+    }
+    .author{
+        font-size: 1.25rem;
+        margin-left: 10rem
+    }
+
+    .phone p{
+        font-size: 12px;
+        margin: 15px;
+    }
+
+    .phone img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .email p{
+        font-size: 12px;
+        margin: 15px;
+    }
+
+    .email img{
+        height: 30px;
+        width: 30px;
     }
 }
 
+@media (min-width: 600px){
+    h2{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+    
+    .list{
+        font-size: 1.25rem;
+    }
+
+    .quote{
+        font-size: 1.5rem;
+    }
+    .author{
+        font-size: 1.5rem;
+        margin-left: 12rem
+    }
+}
+
+@media (min-width: 600px){
+    h2{
+        font-size: 2.25rem;
+    }
+
+    h2{
+        font-size: 2.25rem;
+    }
+    
+    .list{
+        font-size: 1.75rem;
+    }
+
+    .quote{
+        font-size: 2rem;
+    }
+    .author{
+        font-size: 1.75rem;
+        margin-left: 14rem
+    }
+}
 
 
