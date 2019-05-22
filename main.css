@@ -1,56 +1,35 @@
 body{
     background-color: rgb(22, 21, 21);
+    background-image: url("./images/image1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% 60%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
 
 
-.hero img{
-    display: block;
+.hero h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    background-color: rgb(100, 206, 35);
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    height: 200px;
+    height: 125px;
     border: 2px solid rgb(36, 36, 184);
+    border-radius: 30px;
     box-shadow: 3px 3px 5px 6px #ccc;
-    /* animation-name: fadein;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
-    animation-delay: 0; */
-
+    
 }
 
-body:after {
-    display: block;
-    margin-left: 25%;
-    margin-right: 25%;
-    content:'';
-    top:0;
-	transform:translateX(100%);
-	width:100%;
-	height:220px;
-	position: absolute;
-	z-index:1;
-	animation: slide 2s infinite 3s;
-	 
-  /* 
-  CSS Gradient - complete browser support from http://www.colorzilla.com/gradient-editor/ 
-  */
-    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(128,186,232,0) 99%, rgba(125,185,232,0) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0.8)), color-stop(99%,rgba(128,186,232,0)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* IE10+ */
-	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
-}
-
-
-
-h2{
+/* h2{
     margin: 20px;
-    font-size: 2em;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     color: white;
@@ -60,38 +39,31 @@ h2{
     animation-timing-function: ease-in;
     animation-delay: 0s;
     opacity: 0;
-}
+} */
 
 h3{
     display: flex;
     justify-content: center;
     margin: 10px;
-    font-size: 1.5rem;
-    /* animation-name: fadein;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
-    animation-delay: 2s;
-    opacity: 0; */
+    font-size: 1rem;
+    opacity: 0;
 }
 
 .list{
     display: flex;
     justify-content: center;
-    font-size: 1.5rem;
-    /* animation-name: fadein;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
-    animation-delay: 2s;
-    opacity: 0; */
+    font-size: .8rem;
+    margin: 10px 10px;
+    opacity: 0;
 }
 
 ul li{
     list-style: none;
+    opacity: 0;
 }
 
-.truth{
+/* .truth{
+    height: fit-content;
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 10px;
@@ -100,18 +72,22 @@ ul li{
     color: white;
     box-shadow: 3px 3px 5px 6px #ccc;
     animation-name: fadein;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
     opacity: 0;
 
-}
+} */
 
 .quote{
     display: flex;
     justify-content: center;
-    font-size: 1.5rem;
+    height: fit-content;
+    margin-left:10px;
+    opacity: 0;
+    font-size: 1rem;
+    
     
     
 }
@@ -119,9 +95,75 @@ ul li{
 .author{
     display: flex;
     justify-content: center;
-    margin-left: 16em;
+    margin-left: 8rem;
     font-size: 1rem;
+    opacity: 0;
     
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+
+}
+
+footer{
+    display: inline-block;
+    margin-left: 20%;
+    
+}
+
+.email{
+    display: flex
+}
+
+.email img{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border: 2px solid white;
+    
+}
+
+.email p{
+    color: white;
+    margin: 25px;
+   
+}
+
+.phone{
+    display: flex;
+    
+}
+
+.phone img{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border: 2px solid white;
+}
+
+.phone p{
+    color: white;
+    margin: 25px;
+}
+
+.insta{
+    display: flex;
+}
+
+.insta a img{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border: 2px solid white;
+}
+
+.insta p{
+    color: white;
+    margin: 25px;
 }
 
 @keyframes fadein{
@@ -154,29 +196,140 @@ ul li{
        }
 }
 
-@media (max-width: 300px){
-    .hero{
-        width: 290px;
-        font-size: .75rem;
-        margin: 10px;
+@media (min-width: 300px){
+    body{
+        background-size: 100% 60%;
     }
-    h2 h3 .list{
-        width: 290px;
-        font-size: .75rem;
-        margin: 10px;
+    
+    .hero h2{
+        height: 50px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    h2{
+        font-size: .7rem;
+    }
+    
+    h3{
+        font-size: 1.25rem;
+    }
+    
+    .list{
+        font-size: 1rem;
     }
 
-    .truth{
-        width: 290px;
-        font-size: .75rem;
-        margin: 10px;
+    .quote{
+        font-size: 1.25rem;
+    }
+    .author{
+        font-size: 1.25rem;
+        margin-left: 10rem
     }
 
-    .quote .author{
-        font-size: .75rem;
-        margin: 10px;
+    footer{
+        display: inline-block;
+        margin-left: 20%;
+        margin-top:80px;
+        
+    }
+
+    .phone p{
+        font-size: 12px;
+        margin: 15px;
+    }
+
+    .phone img{
+        height: 15px;
+        width: 15px;
+    }
+
+    .email p{
+        font-size: 12px;
+        margin: 15px;
+    }
+
+    .email img{
+        height: 15px;
+        width: 15px;
+    }
+
+    .insta a img{
+        height: 15px;
+        width: 15px;
+       
+    }
+
+    .insta p{
+        font-size: 12px;
+        margin: 15px;
     }
 }
 
+@media (min-width: 600px){
+    h2{
+        font-size: 2rem;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+    
+    .list{
+        font-size: 1rem;
+    }
+
+    .quote{
+        font-size: 1.5rem;
+    }
+    .author{
+        font-size: 1.5rem;
+        margin-left: 12rem
+    }
+    
+    footer{
+    display: flex;
+    margin-left: 0;
+    justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 900px){
+    body{
+        background-size: 70% 70%;
+    }
+    
+    .hero h2{
+        height: 90px;
+        margin-bottom: 60px;
+        margin-top: 20px;
+    }
+    
+    h2{
+        font-size: 2rem;
+    }
+    
+    h3{
+        font-size: 2.25rem;
+    }
+    
+    .list{
+        font-size: 1.75rem;
+    }
+
+    .quote{
+        font-size: 2rem;
+    }
+    .author{
+        font-size: 1.75rem;
+        margin-left: 14rem
+    }
+
+    footer{
+        display: flex;
+        margin-left: 10px;
+        justify-content: space-evenly;
+        }
+}
 
 
