@@ -1,23 +1,33 @@
 body{
     background-color: rgb(22, 21, 21);
+    background-image: url("./images/image1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% 60%;
     font-family: 'Montserrat', sans-serif;
 }
 
 
 
 
-.hero img{
-    display: block;
+.hero h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top:20px;
+    background-color: rgb(100, 206, 35);
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    height: 175px;
+    height: 125px;
     border: 2px solid rgb(36, 36, 184);
+    border-radius: 30px;
     box-shadow: 3px 3px 5px 6px #ccc;
+    
 }
 
-h2{
+/* h2{
     margin: 20px;
     font-size: 1rem;
     display: flex;
@@ -29,14 +39,14 @@ h2{
     animation-timing-function: ease-in;
     animation-delay: 0s;
     opacity: 0;
-}
+} */
 
 h3{
     display: flex;
     justify-content: center;
     margin: 10px;
     font-size: 1rem;
-  
+    opacity: 0;
 }
 
 .list{
@@ -44,13 +54,15 @@ h3{
     justify-content: center;
     font-size: .8rem;
     margin: 10px 10px;
+    opacity: 0;
 }
 
 ul li{
     list-style: none;
+    opacity: 0;
 }
 
-.truth{
+/* .truth{
     height: fit-content;
     box-sizing: border-box;
     border: 2px solid black;
@@ -66,15 +78,16 @@ ul li{
     animation-delay: 1.5s;
     opacity: 0;
 
-}
+} */
 
 .quote{
     display: flex;
     justify-content: center;
     height: fit-content;
     margin-left:10px;
-    
+    opacity: 0;
     font-size: 1rem;
+    
     
     
 }
@@ -84,6 +97,7 @@ ul li{
     justify-content: center;
     margin-left: 8rem;
     font-size: 1rem;
+    opacity: 0;
     
 }
 
@@ -91,12 +105,14 @@ h4{
     display: flex;
     justify-content: center;
     color: white;
+    opacity: 0;
 
 }
 
 footer{
     display: inline-block;
     margin-left: 20%;
+    
 }
 
 .email{
@@ -108,15 +124,18 @@ footer{
     width: 50px;
     margin: 10px;
     border: 2px solid white;
+    
 }
 
 .email p{
     color: white;
     margin: 25px;
+   
 }
 
 .phone{
     display: flex;
+    
 }
 
 .phone img{
@@ -178,8 +197,18 @@ footer{
 }
 
 @media (min-width: 300px){
+    body{
+        background-size: 100% 60%;
+    }
+    
+    .hero h2{
+        height: 50px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
     h2{
-        font-size: 1.25rem;
+        font-size: .7rem;
     }
     
     h3{
@@ -201,6 +230,7 @@ footer{
     footer{
         display: inline-block;
         margin-left: 20%;
+        margin-top:80px;
         
     }
 
@@ -210,8 +240,8 @@ footer{
     }
 
     .phone img{
-        height: 30px;
-        width: 30px;
+        height: 15px;
+        width: 15px;
     }
 
     .email p{
@@ -220,13 +250,13 @@ footer{
     }
 
     .email img{
-        height: 30px;
-        width: 30px;
+        height: 15px;
+        width: 15px;
     }
 
     .insta a img{
-        height: 30px;
-        width: 30px;
+        height: 15px;
+        width: 15px;
        
     }
 
@@ -265,10 +295,20 @@ footer{
 }
 
 @media (min-width: 900px){
-    h2{
-        font-size: 2.25rem;
+    body{
+        background-size: 70% 70%;
     }
-
+    
+    .hero h2{
+        height: 90px;
+        margin-bottom: 60px;
+        margin-top: 20px;
+    }
+    
+    h2{
+        font-size: 2rem;
+    }
+    
     h3{
         font-size: 2.25rem;
     }
